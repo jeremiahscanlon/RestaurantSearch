@@ -10,7 +10,12 @@ var b = {
 
 // Mapping of step names to colors.
 var colors = {
-  "home": "#5687d1",
+  "Chinese":"#025255",
+  "Italian":"#adac55",
+  "American": "#7b615c",
+  "Mexican":"D6782B",
+  "Indian":"#3A5FA9",
+  "French": "#D62BCC",
   "$":"#063e09",
   "$$":"#066f09",
   "$$$":"#06a409",
@@ -20,14 +25,6 @@ var colors = {
   "3.0":"#850085",
   "4.0":"#460085",
   "5.0":"#0200de",
-  "Chinese":"#025255",
-  "Italian":"#adac55",
-  "American": "#7b615c",
-  "Mexican":"D6782B",
-  "Indian":"#3A5FA9",
-  "search": "#de783b",
-  "French": "#6ab975",
-  "other": "#a173d1",
   "end": "#bbbbbb"
 };
 
