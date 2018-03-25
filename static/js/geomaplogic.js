@@ -84,8 +84,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon1})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-        //.bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+        //.bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 //<a href="/map">Map</a>
   }
@@ -114,8 +114,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers2.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon2})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-        //.bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+        //.bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 
   }
@@ -146,8 +146,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers3.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon3})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 
   }
@@ -179,8 +179,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers4.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon4})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 
   }
@@ -212,8 +212,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers5.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon5})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 
   }
@@ -245,8 +245,8 @@ console.log(restaurant);
 
       // Add a new marker to the cluster group and bind a pop-up
       markers6.addLayer(L.marker([restaurant.location.latitude, restaurant.location.longitude], {icon: myIcon6})
-      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Zomato reviews url</a>"));
-      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Zomato reviews url: "+ restaurant.url));
+      .bindPopup(restaurant.name + "<hr>" + restaurant.cuisines + "<hr>" + "Rating: "+restaurant.user_rating.aggregate_rating+ "    Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + restaurant.location.address + "<hr>" +  "<a href='"+ restaurant.url+"'>Reviews</a>"));
+      //  .bindPopup(restaurant.name + "<hr>" + restaurant.location.address+ "<hr>" + restaurant.cuisines + "<hr>" + "Avg Cost for 2: $" +restaurant.average_cost_for_two + "<hr>" + "Reviews: "+ restaurant.url));
     }
 
   }
