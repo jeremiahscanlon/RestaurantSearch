@@ -126,7 +126,7 @@ console.log(restaurant);
 });
 
 //chinese
-var url = zomato_url + "73"+ zomato_key;
+var url = zomato_url + "25"+ zomato_key;
 
 // Grabbing the data with d3..
 d3.json(url, function(response) {
