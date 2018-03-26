@@ -1,0 +1,1 @@
+web: gunicorn RestaurantSearch.app:app
