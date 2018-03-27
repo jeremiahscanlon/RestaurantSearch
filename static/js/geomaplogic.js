@@ -257,7 +257,7 @@ console.log(restaurant);
   myMap.addLayer(markers6);
 });
 
-console.log("adding yelp1");
+console.log("adding American yelp");
 d3.json("/static/js/yelp.json", function(response){
   console.log("adding yelp2");
   console.log(response);
@@ -278,3 +278,107 @@ if (yelprestaurant) {
    myMap.addLayer(yelpmarker);
 }) ;
 
+console.log("adding Indian yelp");
+d3.json("/static/js/indian_yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon2})
+      .bindPopup(yelprestaurant.name + "<hr>" + "Indian"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
+
+console.log("adding Chinese yelp");
+d3.json("/static/js/chinese_yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon3})
+      .bindPopup(yelprestaurant.name + "<hr>" + "Chinese"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
+
+console.log("adding Mexican yelp");
+d3.json("/static/js/mexican_yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon4})
+      .bindPopup(yelprestaurant.name + "<hr>" + "Mexican"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
+
+console.log("adding Italian yelp");
+d3.json("/static/js/italian_yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon5})
+      .bindPopup(yelprestaurant.name + "<hr>" + "Italian"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
+
+console.log("adding french yelp");
+d3.json("/static/js/french_yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon6})
+      .bindPopup(yelprestaurant.name + "<hr>" + "French"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
