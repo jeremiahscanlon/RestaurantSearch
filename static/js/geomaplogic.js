@@ -4,7 +4,7 @@ var mapbox = "https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}
 // Creating map object
 var myMap = L.map("map", {
   center: [40.73, -73.98],
-  zoom: 13
+  zoom: 12
 });
 
 var myIcon1 = L.icon({
@@ -256,4 +256,25 @@ console.log(restaurant);
   console.log("adding french");
   myMap.addLayer(markers6);
 });
+
+console.log("adding yelp1");
+d3.json("/static/js/yelp.json", function(response){
+  console.log("adding yelp2");
+  console.log(response);
+  var yelprestaurants  = response.businesses;
+  console.log(yelprestaurants);
+  console.log(yelprestaurants.length);
+  var yelpmarker = L.markerClusterGroup();
+  for (var i = 0; i < yelprestaurants.length; i++) {
+    var yelprestaurant = yelprestaurants[i];
+    console.log("yelp: "+ yelprestaurant)
+if (yelprestaurant) {
+    yelpmarker.addLayer(L.marker([yelprestaurant.coordinates.latitude, yelprestaurant.coordinates.longitude], {icon: myIcon1})
+      .bindPopup(yelprestaurant.name + "<hr>" + "American"+ "<hr>" + "Rating: " + yelprestaurant.rating + "  Price level: " +yelprestaurant.price + "<hr>" +yelprestaurant.location.address1+', '+ yelprestaurant.location.city+ ' '+yelprestaurant.location.state+ ' '+yelprestaurant.location.zip_code+ "<hr>" + "<a href='"+ yelprestaurant.url+"'>Reviews</a>"));
+}
+    //yelprestaurants.push(yelpmarker)
+  }
+  console.log("adding yelp to map");
+   myMap.addLayer(yelpmarker);
+}) ;
 
